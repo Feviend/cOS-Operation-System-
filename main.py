@@ -2,6 +2,7 @@ from os import*
 from time import*
 from random import*
 from colorama import*
+from PC_Game import*
 init(autoreset=True)
 errors = ["SYSTEM ERROR!!", "Reloading...", "Aaaaaaaa", "Main core is broken!"]
 
@@ -229,6 +230,8 @@ while True:
 		add_tool()
 	elif(i == "game"):
 		game()
+        elif(i == "pc game"):
+                box_game()
 	else:
 		use_tool()
 		if not_error == False:
