@@ -17,3 +17,5 @@ If you enter "tool" , you can create your own command by entering the name and c
 If you enter "kill", the os will stop working and will display red errors.After the re-entry, it will work again.
 
 If you enter "random", a random number will be output.
+
+If you enter "pc game", you can play pc box game.
