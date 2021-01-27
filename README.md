@@ -1,5 +1,6 @@
 # cOS-Operation-System-
 Free python console operation system.You can edit this os.Please read readme file
+PLEASE READ LICENSE!!
 
 To change the language to Russian, you need to write "lang=rus", to English, you need to write "lang=eng".
 
