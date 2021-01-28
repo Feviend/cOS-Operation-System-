@@ -62,31 +62,6 @@ def add_tool():
 			else:
 				code += c
 	tools.append([name, code])
-def use_tool():
-	for d in tools:
-		if i == d[0]:
-			not_error = True
-			try:
-				exec(d[1])
-			except SyntaxError:
-				if lang == "eng":
-					print(syn)
-				else:
-					print(syn2)
-			except NameError:
-				if lang == "eng":
-					print(nam)
-				else:
-					print(nam2)
-			except ZeroDivisionError:
-				if lang == "eng":
-					print(zero)
-				else:
-					print(zero2)
-			except IdentationError:
-				print(id)
-			except TabError:
-				print(tab)
 def game():
 	cash = 0
 	max = 20
@@ -230,10 +205,33 @@ while True:
 		add_tool()
 	elif(i == "game"):
 		game()
-        elif(i == "pc game"):
-                box_game()
+	elif(i == "pc game"):
+		box_game()
 	else:
-		use_tool()
+		for d in tools:
+			if i == d[0]:
+				not_error = True
+			try:
+				exec(d[1])
+			except SyntaxError:
+				if lang == "eng":
+					print(syn)
+				else:
+					print(syn2)
+			except NameError:
+				if lang == "eng":
+					print(nam)
+				else:
+					print(nam2)
+			except ZeroDivisionError:
+				if lang == "eng":
+					print(zero)
+				else:
+					print(zero2)
+			except IdentationError:
+				print(id)
+			except TabError:
+				print(tab)
 		if not_error == False:
 			if lang == "eng":
 				print(Fore.RED + "command " + str(i) + " is not defined!")
