@@ -32,5 +32,7 @@ paste(i9, 2)
 
 def box_game():
 	while True:
-		a = input()
+	        a = input()
+                if a == "end":
+                        break
 		print(choice(items))
