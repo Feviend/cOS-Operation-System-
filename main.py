@@ -90,7 +90,6 @@ while True:
 	printlocate()
 	i = input()
 	if(locate == m + varloc):
-		locate = m + varloc
 		if lang == "eng":
 			name = input(inputname)
 			value = input(inputvalue)
@@ -122,7 +121,6 @@ while True:
 		lang = "eng"
 		print("language = english")
 	elif(i == "var"):
-		locate = m + "var/"
 		if lang == "eng":
 			name = input(inputname)
 			value = input(inputvalue)
